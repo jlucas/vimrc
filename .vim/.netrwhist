@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/job/smurfsny/dev/sandbox/sandbox_kmccullo/common/etc'
-let g:netrw_dirhist_2='/job/smurfsny/common/nuke/6.0_64/scripts/fshow'
-let g:netrw_dirhist_3='/job/pipelineny/common/etc/modules/nuke-show'
