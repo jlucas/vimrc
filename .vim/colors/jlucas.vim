@@ -1,73 +1,103 @@
-" Vim color file
-" Maintainer: Rafal Sulejman <rms@poczta.onet.pl>
-" Last Change:  2002.06.18
-"
-" This color scheme uses a black (dark) background.
+" vim: ts=4 sw=4 expandtab:
+" description:  color scheme based on
+"       julievonderropp's corporation (available on kuler.adobe.com)
+"      author:  kamil.stachowski@gmail.com
+"     license:  gpl 3+
+"     version:  0.1 (2008.11.08)
 
-" First remove all existing highlighting.
+" changelog:
+"       0.1:    2008.11.08
+"           initial version
+
+
 set background=dark
 hi clear
 if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name = "jlucas"
-hi Normal       guibg=#424A3C guifg=#C0C0C0 gui=NONE
+let g:colors_name = "corporation"
 
-"#F7C368",
-"#FFFFD9",
-"#CFCF97",
-"#8F8E60",
-"#424A3C"
+"black      192224
+"blue       536991
+"grey dark  5E6C70
+"grey light A1A6A8
+"white      F9F9FF
+"yellow     BD9800
 
+" https://upload.wikimedia.org/wikipedia/en/1/15/Xterm_256color_chart.svg
+"orange 202 (alts 136 214 208 166)
 
-" Main colors
-hi Constant     guibg=#424a3c guifg=#ffffd9 gui=NONE
-hi Identifier   guibg=#424a3c guifg=#ffffd9 gui=NONE
-hi Special      guibg=#424a3c guifg=#cfcf97 gui=NONE
-hi Statement    guibg=#424a3c guifg=#f7c368 gui=NONE
-hi Preproc      guibg=#424a3c guifg=#cfcf97 gui=NONE
-hi Type         guibg=#424a3c guifg=#f7c368 gui=NONE
+"hi Comment cterm=italic    ctermfg=242 
+hi Comment       cterm=bold       ctermfg=238  ctermbg=234
+hi Constant                       ctermfg=36
+hi Cursor                         ctermfg=234  ctermbg=15
+hi CursorColumn                                ctermbg=235
+hi CursorIM                       ctermfg=234  ctermbg=250
+hi DiffAdd                                     ctermbg=235
+hi DiffChange                                  ctermbg=236
+hi DiffDelete                                  ctermbg=234
+hi DiffText                                    ctermbg=236
+hi Error                          ctermfg=36  ctermbg=88
+hi FoldColumn    cterm=italic     ctermfg=234  ctermbg=36
+hi Identifier                     ctermfg=202
+hi ModeMsg       cterm=bold       ctermfg=15   ctermbg=234
+hi Normal                         ctermfg=245  ctermbg=234
+hi PreProc                        ctermfg=202
+hi Search                         ctermfg=234  ctermbg=202
+hi SignColumn                     ctermfg=234  ctermbg=250
+hi Statement     cterm=bold       ctermfg=202
+hi StatusLine    cterm=bold       ctermfg=234  ctermbg=202
+hi StatusLineNC  cterm=bold       ctermfg=234  ctermbg=242
+hi Title         cterm=bold       ctermfg=15   ctermbg=234
+hi Todo                           ctermfg=15       ctermbg=202
+hi Type          cterm=bold       ctermfg=250
+hi Underlined    cterm=underline  ctermfg=15   ctermbg=234
+hi Visual                         ctermfg=234      ctermbg=15
+hi VisualNOS     cterm=underline  ctermfg=234  ctermbg=15
+hi WildMenu                                    ctermbg=36
 
-" Secondary colors
-hi Comment      guibg=#424a3c guifg=#8F8E60 gui=NONE
-hi Visual       guibg=#005900 guifg=#40C940 gui=NONE
-hi VisualNOS    guibg=#005900 guifg=#40C940 gui=NONE
-hi Search       guibg=#707000 guifg=#FFFF00 gui=NONE
-hi IncSearch    guibg=#D05000 guifg=#FFE000 gui=NONE
-
-" Special colors
-hi WarningMsg   guibg=#707000 guifg=#FFFF00 gui=NONE
-hi MoreMsg      guibg=#000070 guifg=#00B8E0 gui=NONE
-hi ErrorMsg     guibg=#CC0000 guifg=#FFEE00 gui=NONE
-hi ModeMsg      guibg=#424a3c guifg=#E8E8E8 gui=NONE
-hi WildMenu     guibg=#5f5f5f guifg=#FFEE60 gui=NONE
-hi StatusLine   guibg=#1f1f1f guifg=#F0F0F0 gui=NONE
-hi StatusLineNC guibg=#0f0f0f guifg=#eaea3a gui=NONE
-hi VertSplit    guibg=#1f1f1f guifg=#F0F0F0 gui=NONE
-hi Error        guibg=#EE0000 guifg=#FFDD60 gui=NONE
-hi Todo         guibg=#EEE000 guifg=#000000 gui=NONE
-hi Title        guibg=#424a3c guifg=#ffffff gui=NONE
-hi Question     guibg=#005900 guifg=#40E840 gui=NONE
-hi LineNr       guibg=#424a3c guifg=#F0B0E0 gui=NONE
-hi Directory    guibg=#424a3c guifg=#D0D0D0 gui=NONE
-hi NonText      guibg=#424a3c guifg=#FFDDAA gui=NONE
-hi SpecialKey   guibg=#424a3c guifg=#FFFFFF gui=NONE
-
-" Diff colors
-hi DiffAdd      guibg=#505050 guifg=#D0D0D0 gui=NONE
-hi DiffChange   guibg=#505050 guifg=#D0D0D0 gui=NONE
-hi DiffDelete   guibg=#505050 guifg=#D0D0D0 gui=NONE
-hi DiffText     guibg=#707070 guifg=#F0F0F0 gui=NONE
-
-" Folding colors
-hi Folded       guibg=#703070 guifg=#DDB8DD gui=NONE
-hi FoldColumn   guibg=#C4153B guifg=#F0F0F0 gui=NONE
-
-" Cursor colors
-hi Cursor       guibg=#FFFFFF guifg=#000000 gui=NONE
-hi icursor      guibg=#FFEE00 guifg=#000000 gui=NONE
-hi ncursor      guibg=#FFFFFF guifg=#000000 gui=NONE
-hi rcursor      guibg=#00CCFF guifg=#000000 gui=NONE
-hi lcursor      guibg=#40D040 guifg=#000000 gui=NONE
-
+hi! link Boolean    Constant
+hi! link Character  Constant
+hi! link Conditional    Statement
+hi! link CursorLine CursorColumn
+hi! link Debug      Special
+hi! link Define     PreProc
+hi! link Delimiter  Special
+hi! link Directory  Type
+hi! link ErrorMsg   Error
+hi! link Exception  Statement
+hi! link Float      Constant
+hi! link Folded     FoldColumn
+hi! link Function   Type
+hi! link IncSearch  Search
+hi! link Include    PreProc
+hi! link Keyword    Statement
+hi! link Label      Statement
+hi! link LineNr     Identifier
+hi! link Macro      PreProc
+hi! link MatchParen Statement
+hi! link MoreMsg    Statement
+hi! link NonText    Comment
+hi! link Number     Constant
+hi! link Operator   Statement
+hi! link PreCondit  PreProc
+hi! link Repeat     Statement
+hi! link Special    PreProc
+hi! link SpecialChar    Special
+hi! link SpecialComment Special
+hi! link SpecialKey Comment
+hi! link SpellBad   Underlined
+hi! link SpellCap   Underlined
+hi! link SpellLocal Underlined
+hi! link SpellRare  Underlined
+hi! link StorageClass   Type
+hi! link String     Constant
+hi! link Structure  Type
+hi! link TabLine    StatusLineNC
+hi! link TabLineFill    StatusLineNC
+hi! link TabLineSel StatusLine
+hi! link Tag        Special
+hi! link Typedef    Type
+hi! link VertSplit  StatusLineNC
+hi! link WarningMsg Error
