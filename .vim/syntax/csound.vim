@@ -35,7 +35,8 @@ syn match csOperator	"*"
 syn match csOperator	"-" 
 
 " load list of all opcodes from a file
-source	$VIMRUNTIME/syntax/csound_opcodes.vim
+"source	$VIMRUNTIME/syntax/csound_opcodes.vim
+source	$HOME/.vim/syntax/csound_opcodes.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " csound comments
