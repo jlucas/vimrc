@@ -16,7 +16,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "corporation"
+let g:colors_name = "jlucas"
 
 "black      192224
 "blue       536991
@@ -27,35 +27,43 @@ let g:colors_name = "corporation"
 
 " https://upload.wikimedia.org/wikipedia/en/1/15/Xterm_256color_chart.svg
 "orange 202 (alts 136 214 208 166)
+"
+" Blue-green: 30
+" Pale blue-green: 66
+" Orange: 166
 
 "hi Comment cterm=italic    ctermfg=242 
 hi Comment       cterm=bold       ctermfg=238  ctermbg=234
-hi Constant                       ctermfg=36
-hi Cursor                         ctermfg=234  ctermbg=15
+hi Constant                       ctermfg=66
+hi Cursor                         ctermfg=234  ctermbg=234
 hi CursorColumn                                ctermbg=235
 hi CursorIM                       ctermfg=234  ctermbg=250
+"hi Delimiter                      ctermfg=242
+hi Delimiter                      ctermfg=30
+hi MatchParen   cterm=bold      ctermfg=36     ctermbg=235
 hi DiffAdd                                     ctermbg=235
 hi DiffChange                                  ctermbg=236
 hi DiffDelete                                  ctermbg=234
 hi DiffText                                    ctermbg=236
-hi Error                          ctermfg=36  ctermbg=88
-hi FoldColumn    cterm=italic     ctermfg=234  ctermbg=36
-hi Identifier                     ctermfg=202
+hi Error                          ctermfg=66  ctermbg=88
+hi FoldColumn    cterm=italic     ctermfg=234  ctermbg=66
+hi Identifier                     ctermfg=166
+"hi lispFunc                       ctermfg=66
 hi ModeMsg       cterm=bold       ctermfg=15   ctermbg=234
 hi Normal                         ctermfg=245  ctermbg=234
-hi PreProc                        ctermfg=202
-hi Search                         ctermfg=234  ctermbg=202
+hi PreProc                        ctermfg=166
+hi Search                         ctermfg=234  ctermbg=166
 hi SignColumn                     ctermfg=234  ctermbg=250
-hi Statement     cterm=bold       ctermfg=202
-hi StatusLine    cterm=bold       ctermfg=234  ctermbg=202
+hi Statement     cterm=bold       ctermfg=166
+hi StatusLine    cterm=bold       ctermfg=234  ctermbg=166
 hi StatusLineNC  cterm=bold       ctermfg=234  ctermbg=242
 hi Title         cterm=bold       ctermfg=15   ctermbg=234
-hi Todo                           ctermfg=15       ctermbg=202
+hi Todo                           ctermfg=15       ctermbg=166
 hi Type          cterm=bold       ctermfg=250
 hi Underlined    cterm=underline  ctermfg=15   ctermbg=234
 hi Visual                         ctermfg=234      ctermbg=15
 hi VisualNOS     cterm=underline  ctermfg=234  ctermbg=15
-hi WildMenu                                    ctermbg=36
+hi WildMenu                                    ctermbg=66
 
 hi! link Boolean    Constant
 hi! link Character  Constant
@@ -63,7 +71,7 @@ hi! link Conditional    Statement
 hi! link CursorLine CursorColumn
 hi! link Debug      Special
 hi! link Define     PreProc
-hi! link Delimiter  Special
+"hi! link Delimiter  Special
 hi! link Directory  Type
 hi! link ErrorMsg   Error
 hi! link Exception  Statement
@@ -76,7 +84,7 @@ hi! link Keyword    Statement
 hi! link Label      Statement
 hi! link LineNr     Identifier
 hi! link Macro      PreProc
-hi! link MatchParen Statement
+"hi! link MatchParen Statement
 hi! link MoreMsg    Statement
 hi! link NonText    Comment
 hi! link Number     Constant
@@ -101,3 +109,5 @@ hi! link Tag        Special
 hi! link Typedef    Type
 hi! link VertSplit  StatusLineNC
 hi! link WarningMsg Error
+
+hi! link lispFunc Keyword
