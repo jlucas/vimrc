@@ -28,42 +28,42 @@ let g:colors_name = "jlucas"
 " https://upload.wikimedia.org/wikipedia/en/1/15/Xterm_256color_chart.svg
 "orange 202 (alts 136 214 208 166)
 "
+" light gray: 
 " Blue-green: 30
 " Pale blue-green: 66
-" Orange: 166
+" Orange: 172 (formerly 166)
 
 "hi Comment cterm=italic    ctermfg=242 
-hi Comment       cterm=bold       ctermfg=238  ctermbg=234
-hi Constant                       ctermfg=66
-hi Cursor                         ctermfg=234  ctermbg=234
-hi CursorColumn                                ctermbg=235
-hi CursorIM                       ctermfg=234  ctermbg=250
-"hi Delimiter                      ctermfg=242
-hi Delimiter                      ctermfg=30
-hi MatchParen   cterm=bold      ctermfg=36     ctermbg=235
-hi DiffAdd                                     ctermbg=235
-hi DiffChange                                  ctermbg=236
-hi DiffDelete                                  ctermbg=234
-hi DiffText                                    ctermbg=236
-hi Error                          ctermfg=66  ctermbg=88
-hi FoldColumn    cterm=italic     ctermfg=234  ctermbg=66
-hi Identifier                     ctermfg=166
-"hi lispFunc                       ctermfg=66
-hi ModeMsg       cterm=bold       ctermfg=15   ctermbg=234
-hi Normal                         ctermfg=245  ctermbg=234
-hi PreProc                        ctermfg=166
-hi Search                         ctermfg=234  ctermbg=166
-hi SignColumn                     ctermfg=234  ctermbg=250
-hi Statement     cterm=bold       ctermfg=166
-hi StatusLine    cterm=bold       ctermfg=234  ctermbg=166
-hi StatusLineNC  cterm=bold       ctermfg=234  ctermbg=242
-hi Title         cterm=bold       ctermfg=15   ctermbg=234
-hi Todo                           ctermfg=15       ctermbg=166
-hi Type          cterm=bold       ctermfg=250
-hi Underlined    cterm=underline  ctermfg=15   ctermbg=234
-hi Visual                         ctermfg=234      ctermbg=15
-hi VisualNOS     cterm=underline  ctermfg=234  ctermbg=15
-hi WildMenu                                    ctermbg=66
+hi  Comment       ctermbg=234  ctermfg=243
+hi  Constant      ctermfg=66
+hi  Cursor        ctermbg=234  ctermfg=234
+hi  CursorColumn  ctermbg=235
+hi  CursorIM      ctermbg=250  ctermfg=234
+hi  Delimiter     ctermfg=30
+hi  MatchParen    ctermbg=235  ctermfg=36   cterm=bold
+hi  DiffAdd       ctermbg=235
+hi  DiffChange    ctermbg=236
+hi  DiffDelete    ctermbg=234
+hi  DiffText      ctermbg=236
+hi  Error         ctermbg=88   ctermfg=66
+hi  FoldColumn    ctermbg=66   ctermfg=234  cterm=italic
+hi  Identifier    ctermfg=172
+hi  LineNr        ctermbg=234  ctermfg=180
+hi  ModeMsg       ctermbg=234  ctermfg=15   cterm=bold
+hi  Normal        ctermbg=234  ctermfg=249
+hi  PreProc       ctermfg=172
+hi  Search        ctermbg=172  ctermfg=234
+hi  SignColumn    ctermbg=250  ctermfg=234
+hi  Statement     ctermfg=172
+hi  StatusLine    ctermbg=172  ctermfg=234  cterm=bold
+hi  StatusLineNC  ctermbg=241  ctermfg=234  cterm=bold
+hi  Title         ctermbg=234  ctermfg=15   cterm=bold
+hi  Todo          ctermbg=172  ctermfg=15
+hi  Type          ctermfg=121
+hi  Underlined    ctermbg=234  ctermfg=15   cterm=underline
+hi  Visual        ctermbg=15   ctermfg=234
+hi  VisualNOS     ctermbg=15   ctermfg=234  cterm=underline
+hi  WildMenu      ctermbg=66
 
 hi! link Boolean    Constant
 hi! link Character  Constant
@@ -82,7 +82,7 @@ hi! link IncSearch  Search
 hi! link Include    PreProc
 hi! link Keyword    Statement
 hi! link Label      Statement
-hi! link LineNr     Identifier
+"hi! link LineNr     Identifier
 hi! link Macro      PreProc
 "hi! link MatchParen Statement
 hi! link MoreMsg    Statement
@@ -109,5 +109,4 @@ hi! link Tag        Special
 hi! link Typedef    Type
 hi! link VertSplit  StatusLineNC
 hi! link WarningMsg Error
-
 hi! link lispFunc Keyword
