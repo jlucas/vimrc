@@ -69,7 +69,7 @@ hi  LineNr                     ctermfg=180                               guifg=#
 hi  ModeMsg                    ctermfg=15   cterm=bold                   guifg=#ffffff gui=bold
 hi  PreProc                    ctermfg=202                               guifg=#d78700
 hi  Search        ctermbg=172  ctermfg=234               guibg=#d78700   guifg=#1c1c1c
-hi  SignColumn    ctermbg=250  ctermfg=234               guibg=#bcbcbc   guifg=#1c1c1c
+hi  SignColumn    ctermbg=234  ctermfg=232               guibg=#bcbcbc   guifg=#1c1c1c
 hi  Statement                  ctermfg=172                               guifg=#d78700
 hi  StatusLine    ctermbg=172  ctermfg=234  cterm=bold   guibg=#d78700   guifg=#1c1c1c gui=bold
 hi  StatusLineNC  ctermbg=241  ctermfg=234  cterm=bold   guibg=#606060   guifg=#1c1c1c gui=bold
