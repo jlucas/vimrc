@@ -58,7 +58,6 @@ hi  Cursor                     ctermfg=234                               guifg=#
 hi  CursorColumn  ctermbg=235                            guibg=#262626
 hi  CursorIM      ctermbg=250  ctermfg=234               guibg=#bcbcbc   guifg=#1c1c1c
 hi  Delimiter                  ctermfg=30                                guifg=#008787
-hi  MatchParen    ctermbg=234  ctermfg=121   cterm=bold                  guifg=#87ffaf
 hi  DiffAdd       ctermbg=235  ctermfg=179               guibg=#303030   guifg=#d7af5f
 hi  DiffChange    ctermbg=235                            guibg=#303030
 hi  DiffDelete    ctermbg=235    ctermfg=172             guibg=#303030   guifg=#d78700
@@ -83,6 +82,7 @@ hi  VisualNOS     ctermbg=23   ctermfg=234              guibg=#005f5f   guifg=#1
 hi  WildMenu      ctermbg=66                            guibg=#5f8787
 hi  Function                   ctermfg=179
 hi  VarId                      ctermfg=179
+hi  MatchParen    ctermbg=234  ctermfg=121   cterm=bold guibg=#1c1c1c   guifg=#87ffaf
 
 " Lisp
 hi! link lispFunc Keyword
