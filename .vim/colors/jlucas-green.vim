@@ -9,13 +9,14 @@
 "       0.1:    2008.11.08
 "           initial version
 
+
 set background=dark
 hi clear
 if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "jlucas-orange"
+let g:colors_name = "jlucas"
 
 "black      192224
 "blue       536991
@@ -45,9 +46,9 @@ let g:colors_name = "jlucas-orange"
 " 249    #b2b2b2
 " 250    #bcbcbc
 
-fun! <SID>NOOP()
-    return 'ctermbg=241'
-endfun
+" Statement 36 = green-blue
+" Statement 31 = blue-green
+" Statement 172 = orange
 
 "hi Comment cterm=italic    ctermfg=242 
 hi  Normal        ctermbg=234  ctermfg=249               guibg=#1c1c1c   guifg=#b2b2b2
@@ -63,19 +64,19 @@ hi  DiffDelete    ctermbg=235    ctermfg=172             guibg=#303030   guifg=#
 hi  DiffText      ctermbg=235                            guibg=#303030
 hi  Error         ctermbg=88   ctermfg=66                guibg=#870000   guifg=#5f8787
 hi  FoldColumn    ctermbg=66   ctermfg=234  cterm=italic guibg=#5f8787   guifg=#1c1c1c gui=italic
-hi  Identifier                 ctermfg=172                               guifg=#d78700
+hi  Identifier                 ctermfg=37   cterm=none                   guifg=#d78700
 hi  LineNr                     ctermfg=180                               guifg=#d7af87
 hi  ModeMsg                    ctermfg=15   cterm=bold                   guifg=#ffffff gui=bold
-hi  PreProc                    ctermfg=202                               guifg=#d78700
+hi  PreProc                    ctermfg=26                                guifg=#d78700
 hi  Search        ctermbg=172  ctermfg=234               guibg=#d78700   guifg=#1c1c1c
 hi  SignColumn    ctermbg=234  ctermfg=232               guibg=#bcbcbc   guifg=#1c1c1c
-hi  Statement                  ctermfg=172                               guifg=#d78700
-hi  StatusLine    ctermbg=172  ctermfg=234  cterm=bold   guibg=#d78700   guifg=#1c1c1c gui=bold
+hi  Statement                  ctermfg=36   cterm=bold                             guifg=#d78700
+hi  StatusLine    ctermbg=250   ctermfg=234  cterm=bold   guibg=#d78700   guifg=#1c1c1c gui=bold
 hi  StatusLineNC  ctermbg=241  ctermfg=234  cterm=bold   guibg=#606060   guifg=#1c1c1c gui=bold
 hi  Title                      ctermfg=15   cterm=bold                   guifg=#ffffff gui=bold
-hi  Todo          ctermbg=172  ctermfg=15                   guibg=#d78700   guifg=#ffffff
-hi  Type                       ctermfg=121                              guifg=#87ffaf
-hi  Underlined                 ctermfg=15   cterm=underline                guifg=#ffffff  gui=underline
+hi  Todo          ctermbg=none ctermfg=172  cterm=none                   guibg=#d78700 guifg=#ffffff
+hi  Type                       ctermfg=121                               guifg=#87ffaf
+hi  Underlined                 ctermfg=15   cterm=underline              guifg=#ffffff  gui=underline
 hi  Visual        ctermbg=23   ctermfg=121              guibg=#005f5f   guifg=#87ffaf
 hi  VisualNOS     ctermbg=23   ctermfg=234              guibg=#005f5f   guifg=#1c1c1c
 hi  WildMenu      ctermbg=66                            guibg=#5f8787
@@ -116,7 +117,7 @@ hi! link Repeat     Statement
 hi! link Special    PreProc
 hi! link SpecialChar    Special
 hi! link SpecialComment Special
-hi! link SpecialKey Comment
+"hi! link SpecialKey Comment
 hi! link SpellBad   Underlined
 hi! link SpellCap   Underlined
 hi! link SpellLocal Underlined

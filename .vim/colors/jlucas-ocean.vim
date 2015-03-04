@@ -9,13 +9,14 @@
 "       0.1:    2008.11.08
 "           initial version
 
+
 set background=dark
 hi clear
 if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "jlucas-orange"
+let g:colors_name = "jlucas"
 
 "black      192224
 "blue       536991
@@ -50,7 +51,7 @@ fun! <SID>NOOP()
 endfun
 
 "hi Comment cterm=italic    ctermfg=242 
-hi  Normal        ctermbg=234  ctermfg=249               guibg=#1c1c1c   guifg=#b2b2b2
+hi  Normal        ctermbg=23  ctermfg=249               guibg=#1c1c1c   guifg=#b2b2b2
 hi  Comment                     ctermfg=243                              guifg=#767676
 hi  Constant                   ctermfg=66                                guifg=#5f8787
 hi  Cursor                     ctermfg=234                               guifg=#1c1c1c
@@ -69,7 +70,7 @@ hi  ModeMsg                    ctermfg=15   cterm=bold                   guifg=#
 hi  PreProc                    ctermfg=202                               guifg=#d78700
 hi  Search        ctermbg=172  ctermfg=234               guibg=#d78700   guifg=#1c1c1c
 hi  SignColumn    ctermbg=234  ctermfg=232               guibg=#bcbcbc   guifg=#1c1c1c
-hi  Statement                  ctermfg=172                               guifg=#d78700
+hi  Statement                  ctermfg=31                                  guifg=#d78700
 hi  StatusLine    ctermbg=172  ctermfg=234  cterm=bold   guibg=#d78700   guifg=#1c1c1c gui=bold
 hi  StatusLineNC  ctermbg=241  ctermfg=234  cterm=bold   guibg=#606060   guifg=#1c1c1c gui=bold
 hi  Title                      ctermfg=15   cterm=bold                   guifg=#ffffff gui=bold
