@@ -9,7 +9,7 @@ endif
 let s:none = 'none'
 let s:bold = 'bold'
 let s:standout = 'standout'
-let s:white = '248' 
+let s:white = '248'
 let s:white1 = '245'
 let s:black = '16'
 let s:gray = '245'
@@ -21,6 +21,8 @@ let s:gray5 = '240'
 let s:green = '108'
 let s:dirtygreen = '100'
 let s:yellowgreen = '106'
+let s:greenblue = '23'
+let s:lightgreenblue = '121'
 let s:lightbrown = '136'
 let s:lightcyan = '109'
 let s:cyan = '37'
@@ -50,12 +52,12 @@ exe "hi! FoldColumn cterm=".s:none." ctermfg=".s:gray4." ctermbg=".s:none
 exe "hi! Folded cterm=".s:none." ctermfg=".s:white1." ctermbg=".s:gray2
 exe "hi! IncSearch cterm=".s:none." ctermfg=".s:white." ctermbg=".s:darkblue
 exe "hi! LineNr cterm=".s:none." ctermfg=".s:yellow." ctermbg=".s:none
-exe "hi! MatchParen cterm=".s:bold." ctermfg=".s:none." ctermbg=".s:none
+exe "hi! MatchParen cterm=".s:bold." ctermfg=".s:lightgreenblue." ctermbg=".s:none
 exe "hi! ModeMsg cterm=".s:bold." ctermfg=".s:none." ctermbg=".s:none
 exe "hi! MoreMsg cterm=".s:none." ctermfg=".s:green." ctermbg=".s:none
 exe "hi! NonText cterm=".s:none." ctermfg=".s:lightbrown." ctermbg=".s:none
 exe "hi! Pmenu cterm=".s:none." ctermfg=".s:none." ctermbg=".s:gray3
-exe "hi! PmenuSel cterm=".s:none." ctermfg=".s:none." ctermbg=".s:darkblue
+exe "hi! PmenuSel cterm=".s:none." ctermfg=".s:lightgreenblue." ctermbg=".s:greenblue
 exe "hi! PmenuSbar cterm=".s:none." ctermfg=".s:none." ctermbg=".s:gray2
 exe "hi! PmenuThumb cterm=".s:none." ctermfg=".s:none." ctermbg=".s:gray4
 exe "hi! Question cterm=".s:none." ctermfg=".s:green." ctermbg=".s:none
@@ -69,7 +71,7 @@ exe "hi! TabLineFill cterm=".s:none." ctermfg=".s:none." ctermbg=".s:gray3
 exe "hi! TabLineSel cterm=".s:bold." ctermfg=".s:none." ctermbg=".s:none
 exe "hi! Title cterm=".s:none." ctermfg=".s:yellow." ctermbg=".s:none
 exe "hi! VertSplit cterm=".s:none." ctermfg=".s:gray3." ctermbg=".s:gray3
-exe "hi! Visual cterm=".s:none." ctermfg=".s:none." ctermbg=".s:darkblue
+exe "hi! Visual cterm=".s:none." ctermfg=".s:lightgreenblue." ctermbg=".s:greenblue
 exe "hi! VisualNOS cterm=".s:none." ctermfg=".s:none." ctermbg=".s:gray2
 exe "hi! WarningMsg cterm=".s:none." ctermfg=".s:red." ctermbg=".s:none
 exe "hi! WildMenu cterm=".s:none." ctermfg=".s:yellow." ctermbg=".s:none
