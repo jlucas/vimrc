@@ -84,6 +84,11 @@ hi  Function                   ctermfg=179
 hi  VarId                      ctermfg=179
 hi  MatchParen    ctermbg=234  ctermfg=121   cterm=bold guibg=#1c1c1c   guifg=#87ffaf
 
+" Pmenu           Popup menu: normal item.
+" PmenuSel        Popup menu: selected item.
+" PmenuSbar       Popup menu: scrollbar.
+" PmenuThumb      Popup menu: Thumb of the scrollbar.
+
 " Lisp
 hi! link lispFunc Keyword
 
