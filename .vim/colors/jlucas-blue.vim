@@ -70,24 +70,19 @@ hi  ModeMsg                    ctermfg=15   cterm=bold                   guifg=#
 hi  PreProc                    ctermfg=202                               guifg=#d78700
 hi  Search        ctermbg=172  ctermfg=234               guibg=#d78700   guifg=#1c1c1c
 hi  SignColumn    ctermbg=234  ctermfg=232               guibg=#bcbcbc   guifg=#1c1c1c
-hi  Statement                  ctermfg=172                               guifg=#d78700
+hi  Statement                  ctermfg=31   cterm=bold                               guifg=#d78700
 hi  StatusLine    ctermbg=172  ctermfg=234  cterm=bold   guibg=#d78700   guifg=#1c1c1c gui=bold
 hi  StatusLineNC  ctermbg=241  ctermfg=234  cterm=bold   guibg=#606060   guifg=#1c1c1c gui=bold
 hi  Title                      ctermfg=15   cterm=bold                   guifg=#ffffff gui=bold
-hi  Todo          ctermbg=172  ctermfg=15                   guibg=#d78700   guifg=#ffffff
+hi  Todo          ctermbg=none  ctermfg=214                   guibg=#d78700   guifg=#ffffff
 hi  Type                       ctermfg=121                              guifg=#87ffaf
 hi  Underlined                 ctermfg=15   cterm=underline                guifg=#ffffff  gui=underline
 hi  Visual        ctermbg=23   ctermfg=121              guibg=#005f5f   guifg=#87ffaf
 hi  VisualNOS     ctermbg=23   ctermfg=234              guibg=#005f5f   guifg=#1c1c1c
 hi  WildMenu      ctermbg=66                            guibg=#5f8787
-hi  Function                   ctermfg=179
+hi  Function                   ctermfg=44
 hi  VarId                      ctermfg=179
 hi  MatchParen    ctermbg=234  ctermfg=121   cterm=bold guibg=#1c1c1c   guifg=#87ffaf
-
-" Pmenu           Popup menu: normal item.
-" PmenuSel        Popup menu: selected item.
-" PmenuSbar       Popup menu: scrollbar.
-" PmenuThumb      Popup menu: Thumb of the scrollbar.
 
 " Lisp
 hi! link lispFunc Keyword
