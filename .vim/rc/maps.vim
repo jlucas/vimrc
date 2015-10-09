@@ -95,6 +95,9 @@ nmap <leader>gq :tabclose!<CR>
 " Still need this for xterm16 scheme when changing brightness
 nnoremap <leader>hc :hi CursorLine cterm=none ctermbg=234 guibg=#202020 guifg=none<CR>
 
+" gundo
+nnoremap <leader>u :GundoToggle<CR>
+
 "-------------------------------------------------------------
 " normal mode maps
 "-------------------------------------------------------------
