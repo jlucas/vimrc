@@ -1,3 +1,5 @@
+" vim: expandtab
+
 filetype plugin indent on
 au BufNewFile,BufRead *.js,*.jsx,*.javascript,*.es  set filetype=javascript
 au BufNewFile,BufRead *.sco,*.orc,*.csd set filetype=csound

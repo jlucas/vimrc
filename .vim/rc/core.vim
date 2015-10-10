@@ -1,3 +1,5 @@
+" vim: expandtab
+
 " General options
 
 set nocompatible               " Don't make vim behave like vi
