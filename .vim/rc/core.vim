@@ -1,6 +1,7 @@
 " General options
 
 set nocompatible               " Don't make vim behave like vi
+set hidden					   " Buffer switching w/o saving
 set bs=indent,start,eol        " Backspace over everything in
                                " insert mode (except n & t)
 set ruler                      " Show row/column position
