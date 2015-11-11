@@ -204,3 +204,8 @@ let g:org_todo_keywords = ['TASK(t)', 'SCHEDULED(s)',
             \'FEEDBACK(f)', 'ONHOLD(h)', 'BLOCKED(b)', '|',
             \'DONE(d)', 'DELEGATED(g)', 'CANCELLED(c)']
 
+"-------------------------------------------------------------
+" vim-signify
+"-------------------------------------------------------------
+let g:signify_vcs_list = ['git', 'hg', 'svn']
+
