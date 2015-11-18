@@ -1,3 +1,5 @@
+" vim: expandtab
+
 "-------------------------------------------------------------
 " csound
 "-------------------------------------------------------------
@@ -28,6 +30,60 @@ function! HighlightTrailingWhitespace()
         unlet b:highlight_trailing_whitespace
     endif
 endfun
+
+"-------------------------------------------------------------
+" common lisp folding
+"-------------------------------------------------------------
+" From: https://gist.githubusercontent.com/MicahElliott/3049202/raw/cd2b714969c9b2f781ef02f16001807cf96eeae9/vim
+
+" ---------------------------------------------------------------------------
+"  Automagic Clojure folding on defn's and defmacro's
+"
+" Blog post: http://writequit.org/blog/?p=413
+
+function! GetLispFold()
+      if getline(v:lnum) =~ '^\s*(defun.*\s'
+            return ">1"
+      elseif getline(v:lnum) =~ '^\s*(def\(class\|macro\|method\|page\|partial\).*\s'
+            return ">1"
+      elseif getline(v:lnum) =~ '^\s*(defmethod.*\s'
+            return ">1"
+      elseif getline(v:lnum) =~ '^\s*$'
+            let my_cljnum = v:lnum
+            let my_cljmax = line("$")
+
+            while (1)
+                  let my_cljnum = my_cljnum + 1
+                  if my_cljnum > my_cljmax
+                        return "<1"
+                  endif
+
+                  let my_cljdata = getline(my_cljnum)
+
+                  " If we match an empty line, stop folding
+                  if my_cljdata =~ '^$'
+                        return "<1"
+                  else
+                        return "="
+                  endif
+            endwhile
+      else
+            return "="
+      endif
+endfunction
+
+function! TurnOnLispFolding()
+      setlocal foldexpr=GetLispFold()
+      setlocal foldmethod=expr
+endfunction
+
+" Simplify the fold display
+function! MinimalFoldText()
+  return getline(v:foldstart)
+endfunction
+set foldtext=MinimalFoldText()
+
+autocmd FileType *.lisp call TurnOnLispFolding()
 
 "-------------------------------------------------------------
 " quickfix
@@ -147,4 +203,9 @@ let g:table_mode_corner_corner = '+'
 let g:org_todo_keywords = ['TASK(t)', 'SCHEDULED(s)',
             \'FEEDBACK(f)', 'ONHOLD(h)', 'BLOCKED(b)', '|',
             \'DONE(d)', 'DELEGATED(g)', 'CANCELLED(c)']
+
+"-------------------------------------------------------------
+" vim-signify
+"-------------------------------------------------------------
+let g:signify_vcs_list = ['git', 'hg', 'svn']
 
