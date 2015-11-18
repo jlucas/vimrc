@@ -1,5 +1,4 @@
 " General options
-
 set nocompatible               " Don't make vim behave like vi
 set bs=indent,start,eol        " Backspace over everything in
                                " insert mode (except n & t)
@@ -19,8 +18,6 @@ set nohls                      " Don't use search highlighting
 set pastetoggle=<F3>           " Allow F3 to toggle paste mode
 set textwidth=0                " Unlimited line length by
                                " default
-set directory=/tmp/jlucas/vim  " Set swp file dir
-set backupdir=/tmp/jlucas/vim  " Set backup dir
 set cursorline                 " Highlight the current line
 set nrformats-=octal           " Don't treat zero-padded
                                " numbers as octal when using
@@ -51,6 +48,12 @@ endif
 
 if !has('win32')
     behave xterm
+endif
+
+if has('unix')
+	set directory=/tmp/jlucas/vim  " Set swp file dir
+	set backupdir=/tmp/jlucas/vim  " Set backup dir
+	exec 'call system("mkdir -pv -m 700 /tmp/jlucas/vim")'
 endif
 
 " Cant resize vim splits inside tmux?
