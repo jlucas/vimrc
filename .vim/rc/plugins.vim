@@ -83,7 +83,7 @@ function! MinimalFoldText()
 endfunction
 set foldtext=MinimalFoldText()
 
-autocmd FileType *.lisp call TurnOnLispFolding()
+autocmd FileType lisp call TurnOnLispFolding()
 
 "-------------------------------------------------------------
 " quickfix
