@@ -12,6 +12,7 @@ vnoremap <silent> <bar> :!column -t<CR>
 
 " Write file fast
 map <silent> <leader>w :w<CR>
+nnoremap <leader>Z :wq!<CR>
 
 " Quit fast
 map <silent> <leader>q :qa<CR>
