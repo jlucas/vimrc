@@ -115,7 +115,7 @@ command! Email exec Email()
 "-------------------------------------------------------------
 " vim-commentary
 "-------------------------------------------------------------
-au FileType lisp set commentstring=;%s
+au FileType lisp set commentstring=\;\;\ %s
 
 "-------------------------------------------------------------
 " tagbar
