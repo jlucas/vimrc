@@ -122,6 +122,11 @@ nnoremap <M-h> <C-w>h
 nnoremap <M-j> <C-w>j
 nnoremap <M-k> <C-w>k
 nnoremap <M-l> <C-w>l
+" Tab navigation
+execute "set <M-n>=\en"
+execute "set <M-p>=\ep"
+nnoremap <M-n> :tabn<CR>
+nnoremap <M-p> :tabp<CR>
 
 " Print highlight group for the character under the cursor
 " For debugging colorschemes
