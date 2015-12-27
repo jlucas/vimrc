@@ -23,7 +23,7 @@ map <F5> :call RunCsound()<CR>
 function! HighlightTrailingWhitespace()
     if !exists('b:highlight_trailing_whitespace')
         let b:highlight_trailing_whitespace = 1
-        hi TrailingWhitespace ctermbg=36 guibg=#00af87
+        hi TrailingWhitespace cterm=underline ctermfg=214
         match TrailingWhitespace /\s\+$/
     else
         match TrailingWhitespace //
