@@ -63,6 +63,9 @@ nnoremap <leader>xsig i-- <Esc>:r ~/.sig<CR>
 " Highlight trailing whitespace
 map <silent> <leader>htw :call HighlightTrailingWhitespace()<CR>
 
+" Highlight textwidth column
+map <silent> <leader>hcc :call ColorColumnTextwidth()<CR>
+
 " Remove trailing whitespace
 map <leader>rtw :s/\s\+$//<CR>
 

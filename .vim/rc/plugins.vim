@@ -32,6 +32,19 @@ function! HighlightTrailingWhitespace()
 endfun
 
 "-------------------------------------------------------------
+" colorcolumn
+"-------------------------------------------------------------
+function! ColorColumnTextwidth()
+    if !exists('b:colorcolumn_textwidth')
+        highlight ColorColumn ctermbg=214 ctermfg=236
+        let b:colorcolumn_textwidth = matchadd('ColorColumn', '\%'.&textwidth.'v', 100)
+    else
+        call matchdelete(b:colorcolumn_textwidth)
+        unlet b:colorcolumn_textwidth
+    endif
+endfun
+
+"-------------------------------------------------------------
 " common lisp folding
 "-------------------------------------------------------------
 " From: https://gist.githubusercontent.com/MicahElliott/3049202/raw/cd2b714969c9b2f781ef02f16001807cf96eeae9/vim
