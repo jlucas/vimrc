@@ -66,6 +66,9 @@ map <silent> <leader>htw :call HighlightTrailingWhitespace()<CR>
 " Highlight textwidth column
 map <silent> <leader>hcc :call ColorColumnTextwidth()<CR>
 
+" Flag arbitrary window for swapping
+map <silent> <leader>p :call WinBufSwap()<CR>
+
 " Remove trailing whitespace
 map <leader>rtw :s/\s\+$//<CR>
 

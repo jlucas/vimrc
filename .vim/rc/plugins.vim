@@ -45,6 +45,26 @@ function! ColorColumnTextwidth()
 endfun
 
 "-------------------------------------------------------------
+" window swap
+"-------------------------------------------------------------
+function! WinBufSwap()
+    if !exists('g:window_to_swap')
+        let g:window_to_swap = winnr()
+        let g:buffer_to_swap = bufnr('%')
+        echo "Flagged window " . winnr() . " for swapping."
+    else
+        let thiswin = winnr()
+        let thisbuf = bufnr('%')
+        exec g:window_to_swap . " wincmd w" . "|" .
+                    \ "buffer " . thisbuf . "|" .
+                    \ thiswin . " wincmd w" . "|" .
+                    \ "buffer " . g:buffer_to_swap
+        unlet g:window_to_swap
+        unlet g:buffer_to_swap
+    endif
+endfun
+
+"-------------------------------------------------------------
 " common lisp folding
 "-------------------------------------------------------------
 " From: https://gist.githubusercontent.com/MicahElliott/3049202/raw/cd2b714969c9b2f781ef02f16001807cf96eeae9/vim
