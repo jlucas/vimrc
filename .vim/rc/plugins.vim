@@ -240,5 +240,6 @@ let g:org_todo_keywords = ['TASK(t)', 'SCHEDULED(s)',
 "-------------------------------------------------------------
 " vim-signify
 "-------------------------------------------------------------
+" This list should be as small as possible per the docs.
 let g:signify_vcs_list = ['git', 'hg', 'svn']
 
