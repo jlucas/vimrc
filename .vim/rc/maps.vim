@@ -1,7 +1,7 @@
 " vim: expandtab
 
 "-------------------------------------------------------------
-" leader bindings
+" leader maps
 "-------------------------------------------------------------
 " http://stackoverflow.com/questions/446269
 nnoremap <space> <nop>
