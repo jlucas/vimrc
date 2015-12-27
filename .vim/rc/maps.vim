@@ -63,6 +63,9 @@ nnoremap <leader>xsig i-- <Esc>:r ~/.sig<CR>
 " Highlight trailing whitespace
 map <silent> <leader>htw :call HighlightTrailingWhitespace()<CR>
 
+" Highlight textwidth column
+map <silent> <leader>hcc :call ColorColumnTextwidth()<CR>
+
 " Remove trailing whitespace
 map <leader>rtw :s/\s\+$//<CR>
 
@@ -96,7 +99,7 @@ nmap <leader>gd :tabedit %<CR>:Gdiff<CR>
 nmap <leader>gq :tabclose!<CR>
 
 " Still need this for xterm16 scheme when changing brightness
-nnoremap <leader>hc :hi CursorLine cterm=none ctermbg=234 guibg=#202020 guifg=none<CR>
+nnoremap <leader>hcl :hi CursorLine cterm=none ctermbg=234 guibg=#202020 guifg=none<CR>
 
 " gundo
 nnoremap <leader>u :GundoToggle<CR>
