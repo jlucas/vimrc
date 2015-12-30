@@ -107,6 +107,9 @@ nnoremap <leader>hcl :hi CursorLine cterm=none ctermbg=234 guibg=#202020 guifg=n
 " gundo
 nnoremap <leader>u :GundoToggle<CR>
 
+" paredit/slimv
+nnoremap \( :call PareditToggle()<CR>
+
 "-------------------------------------------------------------
 " normal mode maps
 "-------------------------------------------------------------
