@@ -32,6 +32,19 @@ function! HighlightTrailingWhitespace()
 endfun
 
 "-------------------------------------------------------------
+" html preview
+"-------------------------------------------------------------
+
+function! ViewHtmlText(url)
+  if !empty(a:url)
+    new
+    setlocal buftype=nofile bufhidden=hide noswapfile
+    execute 'r !elinks ' . a:url . ' -dump -dump-width ' . winwidth(0)
+    1d
+  endif
+endfunction
+
+"-------------------------------------------------------------
 " colorcolumn
 "-------------------------------------------------------------
 function! ColorColumnTextwidth()

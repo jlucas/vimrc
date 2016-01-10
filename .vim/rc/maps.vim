@@ -110,6 +110,15 @@ nnoremap <leader>u :GundoToggle<CR>
 " paredit/slimv
 nnoremap \( :call PareditToggle()<CR>
 
+" ViewHtmlText() function defined in in plugins.vim
+" Save and view text for current html file
+nnoremap <leader>R :update<Bar>call ViewHtmlText(expand('%:p'))<CR>
+" View text for visually selected url (ViewHtmlText() in plugins.vim)
+vnoremap <leader>r y:call ViewHtmlText(@@)<CR>
+" View text for URL from clipboard.
+" On Linux, use @* for current selection or @+ for text in clipboard.
+nnoremap <leader>r :call ViewHtmlText(@+)<CR>
+
 "-------------------------------------------------------------
 " normal mode maps
 "-------------------------------------------------------------
