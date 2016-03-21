@@ -1,7 +1,7 @@
 " vim: expandtab
 
 "-------------------------------------------------------------
-" leader bindings
+" leader maps
 "-------------------------------------------------------------
 " http://stackoverflow.com/questions/446269
 nnoremap <space> <nop>
@@ -12,6 +12,7 @@ vnoremap <silent> <bar> :!column -t<CR>
 
 " Write file fast
 map <silent> <leader>w :w<CR>
+nnoremap <leader>Z :wq!<CR>
 
 " Quit fast
 map <silent> <leader>q :qa<CR>
@@ -62,6 +63,12 @@ nnoremap <leader>xsig i-- <Esc>:r ~/.sig<CR>
 " Highlight trailing whitespace
 map <silent> <leader>htw :call HighlightTrailingWhitespace()<CR>
 
+" Highlight textwidth column
+map <silent> <leader>hcc :call ColorColumnTextwidth()<CR>
+
+" Flag arbitrary window for swapping
+map <silent> <leader>p :call WinBufSwap()<CR>
+
 " Remove trailing whitespace
 map <leader>rtw :s/\s\+$//<CR>
 
@@ -95,10 +102,22 @@ nmap <leader>gd :tabedit %<CR>:Gdiff<CR>
 nmap <leader>gq :tabclose!<CR>
 
 " Still need this for xterm16 scheme when changing brightness
-nnoremap <leader>hc :hi CursorLine cterm=none ctermbg=234 guibg=#202020 guifg=none<CR>
+nnoremap <leader>hcl :hi CursorLine cterm=none ctermbg=234 guibg=#202020 guifg=none<CR>
 
 " gundo
 nnoremap <leader>u :GundoToggle<CR>
+
+" paredit/slimv
+nnoremap \( :call PareditToggle()<CR>
+
+" ViewHtmlText() function defined in in plugins.vim
+" Save and view text for current html file
+nnoremap <leader>R :update<Bar>call ViewHtmlText(expand('%:p'))<CR>
+" View text for visually selected url (ViewHtmlText() in plugins.vim)
+vnoremap <leader>r y:call ViewHtmlText(@@)<CR>
+" View text for URL from clipboard.
+" On Linux, use @* for current selection or @+ for text in clipboard.
+nnoremap <leader>r :call ViewHtmlText(@+)<CR>
 
 "-------------------------------------------------------------
 " normal mode maps
@@ -121,6 +140,12 @@ nnoremap <M-h> <C-w>h
 nnoremap <M-j> <C-w>j
 nnoremap <M-k> <C-w>k
 nnoremap <M-l> <C-w>l
+
+" Tab navigation
+execute "set <M-n>=\en"
+execute "set <M-p>=\ep"
+nnoremap <M-n> :tabn<CR>
+nnoremap <M-p> :tabp<CR>
 
 " Print highlight group for the character under the cursor
 " For debugging colorschemes

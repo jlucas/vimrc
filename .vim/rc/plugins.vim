@@ -23,11 +23,57 @@ map <F5> :call RunCsound()<CR>
 function! HighlightTrailingWhitespace()
     if !exists('b:highlight_trailing_whitespace')
         let b:highlight_trailing_whitespace = 1
-        hi TrailingWhitespace ctermbg=36 guibg=#00af87
+        hi TrailingWhitespace cterm=underline ctermfg=214
         match TrailingWhitespace /\s\+$/
     else
         match TrailingWhitespace //
         unlet b:highlight_trailing_whitespace
+    endif
+endfun
+
+"-------------------------------------------------------------
+" html preview
+"-------------------------------------------------------------
+
+function! ViewHtmlText(url)
+  if !empty(a:url)
+    new
+    setlocal buftype=nofile bufhidden=hide noswapfile
+    execute 'r !elinks ' . a:url . ' -dump -dump-width ' . winwidth(0)
+    1d
+  endif
+endfunction
+
+"-------------------------------------------------------------
+" colorcolumn
+"-------------------------------------------------------------
+function! ColorColumnTextwidth()
+    if !exists('b:colorcolumn_textwidth')
+        highlight ColorColumn ctermbg=214 ctermfg=236
+        let b:colorcolumn_textwidth = matchadd('ColorColumn', '\%'.&textwidth.'v', 100)
+    else
+        call matchdelete(b:colorcolumn_textwidth)
+        unlet b:colorcolumn_textwidth
+    endif
+endfun
+
+"-------------------------------------------------------------
+" window swap
+"-------------------------------------------------------------
+function! WinBufSwap()
+    if !exists('g:window_to_swap')
+        let g:window_to_swap = winnr()
+        let g:buffer_to_swap = bufnr('%')
+        echo "Flagged window " . winnr() . " for swapping."
+    else
+        let thiswin = winnr()
+        let thisbuf = bufnr('%')
+        exec g:window_to_swap . " wincmd w" . "|" .
+                    \ "buffer " . thisbuf . "|" .
+                    \ thiswin . " wincmd w" . "|" .
+                    \ "buffer " . g:buffer_to_swap
+        unlet g:window_to_swap
+        unlet g:buffer_to_swap
     endif
 endfun
 
@@ -83,7 +129,7 @@ function! MinimalFoldText()
 endfunction
 set foldtext=MinimalFoldText()
 
-autocmd FileType *.lisp call TurnOnLispFolding()
+autocmd FileType lisp call TurnOnLispFolding()
 
 "-------------------------------------------------------------
 " quickfix
@@ -115,7 +161,7 @@ command! Email exec Email()
 "-------------------------------------------------------------
 " vim-commentary
 "-------------------------------------------------------------
-au FileType lisp set commentstring=;%s
+au FileType lisp set commentstring=\;\;\ %s
 
 "-------------------------------------------------------------
 " tagbar
@@ -207,5 +253,6 @@ let g:org_todo_keywords = ['TASK(t)', 'SCHEDULED(s)',
 "-------------------------------------------------------------
 " vim-signify
 "-------------------------------------------------------------
+" This list should be as small as possible per the docs.
 let g:signify_vcs_list = ['git', 'hg', 'svn']
 

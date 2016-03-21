@@ -43,7 +43,9 @@ set sessionoptions =           " Cleaner session files
             \"folds,".
             \"globals,".
             \"resize,".
-            \"winsize"
+            \"winsize,".
+            \"tabpages"
+
 
 if has('mouse')
   set mouse+=a
