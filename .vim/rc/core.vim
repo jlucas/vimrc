@@ -58,7 +58,7 @@ endif
 if has('unix')
 	set directory=/tmp/jlucas/vim  " Set swp file dir
 	set backupdir=/tmp/jlucas/vim  " Set backup dir
-	exec 'call system("mkdir -pv -m 700 /tmp/jlucas/vim")'
+	exec 'call system("mkdir -p -m 700 /tmp/jlucas/vim")'
 endif
 
 " Cant resize vim splits inside tmux?
