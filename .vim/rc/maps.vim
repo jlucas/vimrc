@@ -183,3 +183,6 @@ cmap w!! w !sudo tee >/dev/null %
 " Enable exiting of visual block insert mode with C-c
 vnoremap <C-c> <Esc>
 
+" From :h grep
+command! -nargs=+ Grep execute 'silent grep! <args>' | copen 25
+
