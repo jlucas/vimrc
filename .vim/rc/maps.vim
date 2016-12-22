@@ -186,3 +186,9 @@ vnoremap <C-c> <Esc>
 " From :h grep
 command! -nargs=+ Grep execute 'silent grep! <args>' | copen 25
 
+"-------------------------------------------------------------
+" insert mode maps
+"-------------------------------------------------------------
+inoremap kj <Esc>
+inoremap jk <Esc>
+
