@@ -195,6 +195,8 @@ nmap \d <Plug>SlimeParagraphSend
 nmap \e <Plug>SlimeLineSend
 nmap \c <Plug>SlimeConfig
 xmap \d <Plug>SlimeRegionSend
+" My mods to slime.vim to support nuke.vim
+nnoremap <leader>N :let g:slime_target = 'nuke'<CR>
 
 "-------------------------------------------------------------
 " slimv
