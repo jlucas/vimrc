@@ -233,8 +233,8 @@ if v:version >= 703
     au FileType netrw nnoremap <buffer> q :Rex<CR>
 endif
 " change directory
-au FileType netrw nnoremap cd
-            \:exec ":Ntree ".input("Change directory: ")<CR>
+au FileType netrw nnoremap cd :exec ":Ntree ".input("Change directory: ")<CR>
+
 " preview audio files with aplay
 au FileType netrw set makeprg=aplay\ -D\ jack
 au FileType netrw nnoremap zx
