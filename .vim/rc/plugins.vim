@@ -244,6 +244,8 @@ au FileType netrw nnoremap zx
 " Simpylfold (Python code folding)
 "-------------------------------------------------------------
 let g:SimpylFold_docstring_preview = 1
+" Open all folds by default
+au FileType python normal zR
 
 "-------------------------------------------------------------
 " table-mode
