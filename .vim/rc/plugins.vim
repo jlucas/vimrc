@@ -244,6 +244,8 @@ au FileType netrw nnoremap zx :silent make! <C-R>=shellescape(split(getline('.')
 " Simpylfold (Python code folding)
 "-------------------------------------------------------------
 let g:SimpylFold_docstring_preview = 1
+" Open all folds by default
+au FileType python normal zR
 
 "-------------------------------------------------------------
 " table-mode
