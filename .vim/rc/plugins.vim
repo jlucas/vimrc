@@ -237,9 +237,8 @@ endif
 au FileType netrw nnoremap cd :exec ":Ntree ".input("Change directory: ")<CR>
 
 " preview audio files with aplay
-au FileType netrw set makeprg=aplay\ -D\ jack
-au FileType netrw nnoremap zx
-            \:Make! <C-R>=shellescape(getline('.'))<CR><CR>
+au FileType netrw set makeprg=mplayer
+au FileType netrw nnoremap zx :silent make! <C-R>=shellescape(split(getline('.'), '\*')[0])<CR><CR>:redraw!<CR>
 
 "-------------------------------------------------------------
 " Simpylfold (Python code folding)
