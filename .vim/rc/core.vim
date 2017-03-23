@@ -35,6 +35,7 @@ set splitbelow                 " Open splits on the bottom
 set noerrorbells               " No bells at all
 set scrolloff=2                " Two lines below cursor, always
 set t_kb=                    " XXX: Set backspace
+set spelllang=en_us            " Use US English for spellchecking
 syn on                         " Syntax highlighting on
 set sessionoptions =           " Cleaner session files
             \"blank,".         " in case you want to change
