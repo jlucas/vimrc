@@ -61,10 +61,6 @@ if has('unix')
 	exec 'call system("mkdir -p -m 700 /tmp/jlucas/vim")'
 endif
 
-if has('unnamedplus')
-    set clipboard=unnamedplus
-endif
-
 " Cant resize vim splits inside tmux?
 " http://superuser.com/questions/549930
 if &term =~ '^screen'
