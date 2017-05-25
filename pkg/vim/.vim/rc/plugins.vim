@@ -269,3 +269,15 @@ let g:org_todo_keywords = ['TASK(t)', 'SCHEDULED(s)',
 " This list should be as small as possible per the docs.
 let g:signify_vcs_list = ['git', 'hg', 'svn']
 
+"-------------------------------------------------------------
+" vim-syntastic
+"-------------------------------------------------------------
+" Recommended noob settings from README.md
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntasticalwayspopulateloclist = 1
+let g:syntasticautoloclist = 1
+let g:syntasticcheckonopen = 1
+let g:syntasticcheckon_wq = 0 
+
