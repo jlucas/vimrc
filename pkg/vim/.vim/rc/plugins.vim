@@ -278,6 +278,5 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntasticalwayspopulateloclist = 1
 let g:syntasticautoloclist = 1
-let g:syntasticcheckonopen = 1
 let g:syntasticcheckon_wq = 0 
 
