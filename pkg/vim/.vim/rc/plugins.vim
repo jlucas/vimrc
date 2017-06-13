@@ -12,6 +12,14 @@ map <leader>gs :Gstatus<CR>
 "-------------------------------------------------------------
 " csound
 "-------------------------------------------------------------
+
+function! WriteScoreSelectionToTempFile() range
+	'<,'>w! /tmp/vim_csound.sco
+	!vim-csound
+endfun
+
+map <leader><space> :call WriteScoreSelectionToTempFile()<CR>
+
 function! RunCsound()
     if exists("b:pid")
         let dead = system("kill ".b:pid)
@@ -25,6 +33,8 @@ function! RunCsound()
 endfun
 
 map <F5> :call RunCsound()<CR>
+
+
 
 "-------------------------------------------------------------
 " whitespace
