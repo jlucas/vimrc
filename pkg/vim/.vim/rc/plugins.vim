@@ -283,9 +283,9 @@ let g:signify_vcs_list = ['git', 'hg', 'svn']
 " vim-syntastic
 "-------------------------------------------------------------
 " Recommended noob settings from README.md
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 let g:syntasticalwayspopulateloclist = 1
 let g:syntasticautoloclist = 1
 let g:syntasticcheckon_wq = 0 
