@@ -227,6 +227,7 @@ let g:paredit_electric_return = 0
 let g:slimv_repl_syntax = 1
 "let g:slimv_clhs_root = "/home/jlucas/src/lisp/HyperSpec/Body/"
 "let g:slimv_swank_clojure = '! tmux new-window lein ritz 4005 &'
+nnoremap \( :call PareditToggle()<CR>
 
 "-------------------------------------------------------------
 " BufExplorer
