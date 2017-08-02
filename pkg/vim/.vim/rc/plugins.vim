@@ -197,6 +197,7 @@ let g:tagbar_type_markdown = {
             \ ],
         \ "sort" : 0
         \ }
+nnoremap <silent> <F9> :TagbarToggle<CR>
 
 "-------------------------------------------------------------
 " vim-slime

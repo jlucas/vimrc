@@ -122,8 +122,6 @@ nnoremap <leader>r :call ViewHtmlText(@+)<CR>
 "-------------------------------------------------------------
 " normal mode maps
 "-------------------------------------------------------------
-nnoremap <silent> <F9> :TagbarToggle<CR>
-
 " Move up or down a split, and maximize it.
 nnoremap <C-J> <C-W>j<C-W>_
 nnoremap <C-K> <C-W>k<C-W>_
