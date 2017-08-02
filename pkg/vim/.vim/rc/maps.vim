@@ -104,9 +104,6 @@ nmap <leader>gq :tabclose!<CR>
 " Still need this for xterm16 scheme when changing brightness
 nnoremap <leader>hcl :hi CursorLine cterm=none ctermbg=234 guibg=#202020 guifg=none<CR>
 
-" gundo
-nnoremap <leader>u :GundoToggle<CR>
-
 " paredit/slimv
 nnoremap \( :call PareditToggle()<CR>
 
