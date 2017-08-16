@@ -8,5 +8,4 @@ au BufRead,BufNewFile *.rc set filetype=rc
 au BufNewFile,BufRead *.md,*.markdown,*.mdwn set filetype=markdown
 au BufRead,BufNewFile *.arc set filetype=arc
 au BufRead,BufNewFile *.el let g:slimv_disable_lisp = 1
-au Syntax git normal zR
 
