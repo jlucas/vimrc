@@ -11,7 +11,7 @@ if !has('gui_running')
     let xterm16bg_Normal = 'none'  " Allow transparent bg in terminal
 endif
 
-fun Xterm16Brightness(value)
+fun! Xterm16Brightness(value)
     let g:xterm16_brightness = a:value
     color xterm16
 endfun
