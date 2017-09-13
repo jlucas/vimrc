@@ -59,6 +59,23 @@ function! HighlightTrailingWhitespace()
 endfun
 
 "-------------------------------------------------------------
+" change directory
+"-------------------------------------------------------------
+
+function! CdCurrentFile()
+	execute 'cd %:h'
+endfun
+
+function! CdCurrentFileRealPath()
+	let realpath = fnamemodify(resolve(expand('%')), ':p:h')
+	echo realpath
+	execute 'cd ' . realpath
+endfun
+
+command! Cd call CdCurrentFile()
+command! Cdr call CdCurrentFileRealPath()
+
+"-------------------------------------------------------------
 " html preview
 "-------------------------------------------------------------
 
