@@ -6,6 +6,9 @@ command! -nargs=+ Grep execute 'silent grep! <args>' | copen 42
 "-------------------------------------------------------------
 " fugitive
 "-------------------------------------------------------------
+" FIXME fugitive commands not initialized if buffer not opened in realpath of
+" git repo...
+" https://stackoverflow.com/questions/22409816/vim-launch-command-after-load-plugins
 
 map <leader>gs :Gstatus<CR>
 
