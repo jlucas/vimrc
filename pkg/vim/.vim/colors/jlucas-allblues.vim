@@ -101,4 +101,8 @@ exe "hi! Statement cterm=".s:none." ctermfg=".s:skyblue." ctermbg=".s:none." gui
 exe "hi! Todo cterm=".s:none." ctermfg=".s:lightbrown." ctermbg=".s:none
 exe "hi! Type cterm=".s:none." ctermfg=".s:green." ctermbg=".s:none." guifg=#e0e0e0"
 exe "hi! Underlined cterm=".s:none." ctermfg=".s:darkpurple." ctermbg=".s:none
+" :help spell
 exe "hi! SpellBad cterm=underline ctermfg=".s:none." ctermbg=".s:none
+exe "hi! SpellCap cterm=underline ctermfg=".s:none." ctermbg=".s:none
+exe "hi! SpellRare cterm=underline ctermfg=".s:none." ctermbg=".s:none
+exe "hi! SpellLocal cterm=underline ctermfg=".s:none." ctermbg=".s:none
