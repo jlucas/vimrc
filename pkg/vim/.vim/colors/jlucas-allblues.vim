@@ -20,6 +20,7 @@ let s:white2 = '251'
 let s:white3 = '253'
 let s:black = '16'
 let s:gray = '245'
+let s:gray0 = '233'
 let s:gray1 = '234'
 let s:gray2 = '235'
 let s:gray3 = '236'
@@ -47,10 +48,10 @@ let s:purple = '103'
 let s:darkpurple = '92'
 let s:orange = '208' " not used
 
-exe "hi! Normal cterm=".s:none." ctermfg=".s:white." ctermbg=".s:gray1." guifg=#a0a0a0 guibg=#0a131e"
+exe "hi! Normal cterm=".s:none." ctermfg=".s:white." ctermbg=".s:black." guifg=#a0a0a0 guibg=#0a131e"
 exe "hi! Cursor cterm=".s:none." ctermfg=".s:green." ctermbg=".s:green
 exe "hi! CursorColumn cterm=".s:none." ctermfg=".s:none." ctermbg=".s:gray4
-exe "hi! CursorLine cterm=".s:none." ctermfg=".s:none." ctermbg=".s:gray2." guibg=#101e2f"
+exe "hi! CursorLine cterm=".s:none." ctermfg=".s:none." ctermbg=".s:gray0." guibg=#101e2f"
 exe "hi! DiffAdd cterm=".s:none." ctermfg=".s:lightbrown." ctermbg=".s:gray2
 "exe "hi! DiffAdd cterm=".s:none." ctermfg=".s:orange." ctermbg=".s:gray2
 exe "hi! DiffChange cterm=".s:none." ctermfg=".s:yellow." ctermbg=".s:gray2
@@ -76,7 +77,7 @@ exe "hi! PmenuSbar cterm=".s:none." ctermfg=".s:none." ctermbg=".s:gray2
 exe "hi! PmenuThumb cterm=".s:none." ctermfg=".s:none." ctermbg=".s:gray4
 exe "hi! Question cterm=".s:none." ctermfg=".s:green." ctermbg=".s:none
 exe "hi! Search cterm=".s:none." ctermfg=".s:black." ctermbg=".s:darkcyan
-exe "hi! SignColumn cterm=".s:none." ctermfg=".s:yellow." ctermbg=".s:gray1." guibg=#050a0f"
+exe "hi! SignColumn cterm=".s:none." ctermfg=".s:yellow." ctermbg=".s:gray0." guibg=#050a0f"
 exe "hi! SpecialKey cterm=".s:none." ctermfg=".s:yellow." ctermbg=".s:none
 exe "hi! StatusLineNC cterm=".s:none." ctermfg=".s:gray." ctermbg=".s:gray4
 exe "hi! StatusLine cterm=".s:bold." ctermfg=".s:white2." ctermbg=".s:gray5
