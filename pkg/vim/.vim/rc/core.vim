@@ -16,7 +16,8 @@ set ignorecase                 " Ignore case on searches
 set smartcase                  " Do case-sensitive searches
                                " when search string contains
                                " capitals
-set shortmess=lnrxIT           " Get rid of splash screens
+set shortmess+=r               " Use '[RO]' instead of '[readonly]'
+set shortmess+=I               " Donated €20 on 2018-06-14
 set nohls                      " Don't use search highlighting
 set pastetoggle=<F3>           " Allow F3 to toggle paste mode
 set textwidth=0                " Unlimited line length by
