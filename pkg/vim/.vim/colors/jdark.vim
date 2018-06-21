@@ -87,7 +87,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "edark"
+let g:colors_name = "jdark"
 
 " Current Line
 highlight CursorLine guibg=#333333 ctermbg=236 gui=none cterm=none
