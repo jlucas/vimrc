@@ -75,6 +75,16 @@ endfun
 command! Cd call CdCurrentFile()
 command! Cdr call CdCurrentFileRealPath()
 
+" Fugitive for symlink file
+
+function! OpenFileRealpath()
+	let realpath = fnamemodify(resolve(expand('%')), ':p')
+	echo realpath
+	execute 'file ' . realpath
+endfun
+
+command! Orp call OpenFileRealpath()
+
 "-------------------------------------------------------------
 " html preview
 "-------------------------------------------------------------
