@@ -287,6 +287,9 @@ endif
 " change directory
 au FileType netrw nnoremap cd :exec ":Ntree ".input("Change directory: ")<CR>
 
+" human-readable filesize
+let g:netrw_sizestyle= "h"
+
 " preview audio files with aplay
 au FileType netrw set makeprg=mplayer
 au FileType netrw nnoremap zx :silent make! <C-R>=shellescape(split(getline('.'), '\*')[0])<CR><CR>:redraw!<CR>
