@@ -95,7 +95,7 @@ highlight CursorLineNr guifg=#babdb6 ctermfg=250 gui=none cterm=none
 
 " Default Colors
 "highlight Normal guifg=#babdb6 ctermfg=250 guibg=#1e2426 ctermbg=234
-highlight Normal guifg=#babdb6 ctermfg=250 guibg=#1e2426 ctermbg=236
+highlight Normal guifg=#babdb6 ctermfg=250 guibg=#1e2426 ctermbg=0
 "highlight NonText guifg=#2c3032 ctermfg=235 guibg=#2c3032 ctermbg=235
 highlight NonText guifg=#505456 ctermfg=239 guibg=#2c3032 ctermbg=235
 highlight Cursor guibg=#babdb6 ctermbg=250
