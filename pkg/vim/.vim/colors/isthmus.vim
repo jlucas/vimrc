@@ -47,6 +47,8 @@ let s:orange = '208' " not used
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " isthmus colors
+let s:palegreen = '157'
+let s:paleblue = '49'
 let s:statement = '157'
 let s:type = '157'
 let s:constant = s:white3
@@ -56,7 +58,7 @@ let s:comment = s:gray6
 let s:special = s:white3
 let s:signcolumn = s:white3
 
-exe "hi! Normal cterm=".s:none." ctermfg=".s:white3." ctermbg=".s:none
+exe "hi! Normal cterm=".s:none." ctermfg=".s:none." ctermbg=".s:none
 exe "hi! Cursor cterm=".s:none." ctermfg=".s:green." ctermbg=".s:green
 exe "hi! Statement cterm=".s:none." ctermfg=".s:statement." ctermbg=".s:none
 exe "hi! Type cterm=".s:none." ctermfg=".s:type." ctermbg=".s:none
@@ -65,6 +67,7 @@ exe "hi! Constant cterm=".s:none." ctermfg=".s:constant." ctermbg=".s:none
 exe "hi! Comment cterm=".s:bold." ctermfg=".s:comment." ctermbg=".s:none
 exe "hi! PreProc cterm=".s:none." ctermfg=".s:preproc." ctermbg=".s:none
 exe "hi! SignColumn cterm=".s:none." ctermfg=".s:signcolumn." ctermbg=".s:none
+exe "hi! Visual cterm=".s:none." ctermfg=".s:palegreen." ctermbg=".s:gray3
 " The following are used by the Signify plugin (:h signify)
 exe "hi! DiffChange cterm=".s:none." ctermfg=".s:yellow." ctermbg=".s:none  
 exe "hi! DiffAdd cterm=".s:none." ctermfg=".s:lightbrown." ctermbg=".s:none
@@ -103,7 +106,6 @@ exe "hi! TabLineFill cterm=".s:none." ctermfg=".s:none." ctermbg=".s:gray4
 exe "hi! TabLineSel cterm=".s:bold." ctermfg=".s:white2." ctermbg=".s:gray5
 exe "hi! Title cterm=".s:none." ctermfg=".s:yellow." ctermbg=".s:none
 exe "hi! VertSplit cterm=".s:none." ctermfg=".s:gray3." ctermbg=".s:gray4
-exe "hi! Visual cterm=".s:none." ctermfg=".s:lightgreenblue." ctermbg=".s:greenblue
 exe "hi! VisualNOS cterm=".s:none." ctermfg=".s:none." ctermbg=".s:gray2
 exe "hi! WarningMsg cterm=".s:none." ctermfg=".s:red." ctermbg=".s:none
 exe "hi! WildMenu cterm=".s:none." ctermfg=".s:yellow." ctermbg=".s:none
