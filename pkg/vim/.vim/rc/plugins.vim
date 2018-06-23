@@ -287,6 +287,11 @@ endif
 " change directory
 au FileType netrw nnoremap cd :exec ":Ntree ".input("Change directory: ")<CR>
 
+" Open file under cursor in a preview window
+" :help netrw-p netrw-preview
+" `C-w z` to close a preview window
+let g:netrw_preview = 1
+
 " human-readable filesize
 let g:netrw_sizestyle= "h"
 
