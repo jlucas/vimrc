@@ -1,3 +1,11 @@
+" Get cursor address in file.  Useful for sending someone a 'URI' to a
+" given line.
+function! Addr() 
+	echo "vim " . @% . " +" . line(".")
+endfun
+
+command! Addr call Addr()
+
 "-------------------------------------------------------------
 " grep
 "-------------------------------------------------------------
