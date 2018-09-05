@@ -55,7 +55,7 @@ nmap <leader>VS :%y"<CR>:@"<CR>
 vnoremap <leader>vs y:@"<CR>
 
 " Format paragraph
-nmap <silent> <leader>f vipgq
+nmap <silent> <leader>f gwap
 
 " Add email signature
 nnoremap <leader>xsig i-- <Esc>:r ~/.sig<CR>
