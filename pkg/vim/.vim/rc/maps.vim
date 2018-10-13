@@ -138,6 +138,9 @@ execute "set <M-n>=\en"
 execute "set <M-p>=\ep"
 nnoremap <M-n> :tabn<CR>
 nnoremap <M-p> :tabp<CR>
+" Don't forget the built-ins:
+" gt == :tabp
+" gT == :tabn
 
 " Print highlight group for the character under the cursor
 " For debugging colorschemes
