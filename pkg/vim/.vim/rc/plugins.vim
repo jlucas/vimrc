@@ -7,6 +7,19 @@ endfun
 
 command! Addr call Addr()
 
+" Open tmux split in active buffer's dirname
+function! TmuxSplit(hv)
+	if $TMUX != ""
+		execute 'silent !tmux split-window -' . a:hv . ' -c ' . expand('%:p:h')
+	else
+		echo "It doesn't look like you're in a tmux session."
+	endif
+endfun
+
+command! Tsv call TmuxSplit("v")
+
+command! Tsh call TmuxSplit("h")
+
 "-------------------------------------------------------------
 " grep
 "-------------------------------------------------------------
