@@ -1,5 +1,6 @@
 " Get cursor address in file.  Useful for sending someone a 'URI' to a
 " given line.
+" FIXME: Provides the path relative to vim's pwd
 function! Addr() 
 	echo "vim " . @% . " +" . line(".")
 endfun
