@@ -1,0 +1,60 @@
+[submodule ".vim/bundle/bufexplorer"]
+	path = .vim/bundle/bufexplorer
+	url = https://github.com/jlanzarotta/bufexplorer.git
+[submodule ".vim/bundle/color-xterm16"]
+	path = .vim/bundle/color-xterm16
+	url = https://github.com/vim-scripts/xterm16.vim.git
+[submodule ".vim/bundle/vim-commentary"]
+	path = .vim/bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule ".vim/bundle/gundo.vim"]
+	path = .vim/bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim.git
+[submodule ".vim/bundle/vim-markdown-folding"]
+	path = .vim/bundle/vim-markdown-folding
+	url = https://github.com/nelstrom/vim-markdown-folding.git
+[submodule ".vim/bundle/netrw"]
+	path = .vim/bundle/netrw
+	url = https://github.com/eiginn/netrw.git
+[submodule ".vim/bundle/nuke.vim"]
+	path = .vim/bundle/nuke.vim
+	url = https://github.com/heavyimage/nuke.vim.git
+[submodule ".vim/bundle/paredit"]
+	path = .vim/bundle/paredit
+	url = https://github.com/kovisoft/paredit.git
+[submodule ".vim/bundle/repmo.vim"]
+	path = .vim/bundle/repmo.vim
+	url = https://github.com/vim-scripts/repmo.vim
+[submodule ".vim/bundle/vim-signify"]
+	path = .vim/bundle/vim-signify
+	url = https://github.com/mhinz/vim-signify.git
+[submodule ".vim/bundle/simpylfold"]
+	path = .vim/bundle/simpylfold
+	url = https://github.com/tmhedberg/SimpylFold.git
+[submodule ".vim/bundle/vim-surround"]
+	path = .vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/vim-table-mode"]
+	path = .vim/bundle/vim-table-mode
+	url = https://github.com/dhruvasagar/vim-table-mode.git
+[submodule ".vim/bundle/tagbar"]
+	path = .vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar
+[submodule ".vim/bundle/vim-expand-region"]
+	path = .vim/bundle/vim-expand-region
+	url = https://github.com/terryma/vim-expand-region.git
+[submodule ".vim/bundle/vim-fugitive"]
+	path = .vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/bundle/vim-slime"]
+	path = .vim/bundle/vim-slime
+	url = https://github.com/jlucas/vim-slime.git
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
+[submodule ".vim/bundle/vim-unimpaired"]
+	path = .vim/bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule ".vim/bundle/zoomwin"]
+	path = .vim/bundle/zoomwin
+	url = https://github.com/vim-scripts/ZoomWin.git
